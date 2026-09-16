@@ -1,0 +1,43 @@
+apiVersion: examples.configbutler.ai/v1alpha1
+kind: QuizSubmission
+metadata:
+  labels:
+    voter.configbutler.ai/round: demo1-round-2026-09-15
+    voter.configbutler.ai/submitter: Simon7
+  name: demo1-round-2026-09-15-simon7
+spec:
+  answers:
+    - questionId: approach
+      singleChoice: GitOps
+    - freeText: sfsfead
+      questionId: feedback
+  sessionRef:
+    group: examples.configbutler.ai
+    kind: QuizSession
+    name: demo1-round-2026-09-15
+  submittedAt: "2026-09-16T03:51:13Z"
+---
+apiVersion: examples.configbutler.ai/v1alpha1
+kind: QuizSubmission
+metadata:
+  labels:
+    voter.configbutler.ai/round: demo1
+    voter.configbutler.ai/submitter: Simon7
+  name: demo1-simon7
+spec:
+  answers:
+    - questionId: stack
+      singleChoice: Argo CD
+    - questionId: packaging
+      singleChoice: Helm
+    - multiChoice:
+        - I ask someone in Slack or a ticket
+        - A web UI or portal
+      questionId: approach
+    - freeText: dsfsdf
+      questionId: wish
+  sessionRef:
+    group: examples.configbutler.ai
+    kind: QuizSession
+    name: demo1
+  submittedAt: "2026-09-16T06:59:28Z"
