@@ -73,5 +73,5 @@ spec:
       placeholder: Optional — your answer will be visible to the room
       title: What would you need before running this for real?
       type: freeText
-  state: closed
+  state: live
   title: Now that you have seen it — would you run this?
