@@ -73,5 +73,9 @@ spec:
       placeholder: Optional — your answer will be visible to the room
       title: What would you need before running this for real?
       type: freeText
-  state: live
+    - id: contact
+      placeholder: Optional — shown to the room, like every answer here
+      title: Want me to follow up? Leave an email address.
+      type: freeText
+  state: closed
   title: Now that you have seen it — would you run this?
