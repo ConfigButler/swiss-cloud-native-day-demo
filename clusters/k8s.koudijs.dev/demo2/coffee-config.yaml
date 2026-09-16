@@ -25,7 +25,7 @@ spec:
       name: Filter Coffee
       priceCents: 250
       sku: coffee-filter
-  shopName: Koudijs Demo Coffee2]
+  shopName: Koudijs Demo Covvee
   vouchers:
     - code: TESTNET
       discountType: percentage
