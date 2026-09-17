@@ -16,5 +16,5 @@ spec:
       name: Espresso
       priceCents: 273
       sku: coffee-espresso
-  shopName: Gitops is a lie
+  shopName: "Gitops is a \U0001F916"
   vouchers: []
