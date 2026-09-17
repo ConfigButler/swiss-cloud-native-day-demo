@@ -11,5 +11,5 @@ spec:
     apiKeySecretRef: {}
     zeroAmountCheckoutAllowed: true
   products: []
-  shopName: "Gitops is a \U0001F916"
+  shopName: "☕"
   vouchers: [{appliesToProducts: [], code: voucher-1, discountType: percentage, discountValue: 100, displayMessage: "", enabled: true, maximumUsage: 1}]
