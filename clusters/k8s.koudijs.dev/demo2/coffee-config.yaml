@@ -3,8 +3,8 @@ kind: CoffeeConfig
 metadata:
   name: demo-coffee
 spec:
-  bannerText: There is no spoon
-  currency: CHF
+  bannerText: "There is no \U0001F963"
+  currency: CRD
   mail:
     apiKeySecretRef: {}
   payments:
