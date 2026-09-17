@@ -1,0 +1,25 @@
+apiVersion: platform.configbutler.ai/v1alpha1
+kind: Database
+metadata:
+  annotations:
+    platform.configbutler.ai/intent: 'New loyalty scheme launches in Q1 and the points ledger cannot live in the marketing spreadsheet any longer. Standard tier is fine: if it is down for an hour nobody loses money, they just cannot see their balance.'
+  name: loyalty-points-mysql
+spec:
+  backup:
+    pointInTimeRecovery: false
+    retentionDays: 7
+  dataClassification: internal
+  deletionPolicy: snapshot-then-delete
+  engine: mysql
+  engineVersion: "8.0"
+  network:
+    exposure: vpc
+  owner:
+    contact: digital-channels@example.com
+    costCentre: CC-finance-23
+    team: digital-channels
+  purpose: Points balances and the accrual history behind the loyalty programme. Rebuildable from the event stream, slowly.
+  region: eu-central-1
+  service: loyalty-points
+  size: small
+  tier: standard
