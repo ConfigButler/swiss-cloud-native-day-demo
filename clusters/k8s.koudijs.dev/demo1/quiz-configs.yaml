@@ -36,7 +36,7 @@ spec:
       placeholder: Optional — your answer will be visible to the room
       title: 'In one line: what do you wish people could self-service?'
       type: freeText
-  state: live
+  state: closed
   title: How do you change Kubernetes configuration today?
 ---
 apiVersion: examples.configbutler.ai/v1alpha1
