@@ -4,7 +4,7 @@ metadata:
   name: demo-coffee
 spec:
   bannerText: Nope
-  currency: Bitcoin
+  currency: CHF
   mail:
     apiKeySecretRef: {}
   payments:
