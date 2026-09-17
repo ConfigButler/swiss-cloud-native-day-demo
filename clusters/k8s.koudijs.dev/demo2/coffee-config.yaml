@@ -3,7 +3,7 @@ kind: CoffeeConfig
 metadata:
   name: demo-coffee
 spec:
-  bannerText: Edit this menu. Every phone in the room sees your change. check zhis
+  bannerText: Nope
   currency: Bitcoin
   mail:
     apiKeySecretRef: {}
@@ -14,7 +14,12 @@ spec:
     - description: Small, strong, and fast
       enabled: true
       name: Espresso
-      priceCents: 273
+      priceCents: 2730
       sku: coffee-espresso
+    - description: ""
+      enabled: true
+      name: New Coffee
+      priceCents: 300
+      sku: coffee-2
   shopName: "Gitops is a \U0001F916"
   vouchers: []
