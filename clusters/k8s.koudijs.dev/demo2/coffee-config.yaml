@@ -3,7 +3,7 @@ kind: CoffeeConfig
 metadata:
   name: demo-coffee
 spec:
-  bannerText: "There is no spoon \U0001F944 "
+  bannerText: "There is no spoonooooo"
   currency: CHF
   mail:
     apiKeySecretRef: {}
