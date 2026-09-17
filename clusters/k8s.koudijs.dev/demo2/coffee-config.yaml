@@ -25,7 +25,17 @@ spec:
       name: Filter Coffee
       priceCents: 250
       sku: coffee-filter
-  shopName: Koudijs Demo Coffee2
+    - description: ""
+      enabled: true
+      name: New Coffee
+      priceCents: 300
+      sku: coffee-4
+    - description: ""
+      enabled: true
+      name: New Coffee
+      priceCents: 300
+      sku: coffee-5
+  shopName: Koudijs Demo Coffee3
   vouchers:
     - code: TESTNET
       discountType: percentage
