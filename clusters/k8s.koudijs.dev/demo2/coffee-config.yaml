@@ -4,7 +4,7 @@ metadata:
   name: demo-coffee
 spec:
   bannerText: "There is no spoon \U0001F944 "
-  currency: CRD
+  currency: CHF
   mail:
     apiKeySecretRef: {}
   payments:
