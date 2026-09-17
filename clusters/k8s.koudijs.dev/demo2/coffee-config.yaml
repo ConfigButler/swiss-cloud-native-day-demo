@@ -10,16 +10,6 @@ spec:
   payments:
     apiKeySecretRef: {}
     zeroAmountCheckoutAllowed: true
-  products:
-    - description: Small, strong, and fast
-      enabled: true
-      name: Espresso
-      priceCents: 2730
-      sku: coffee-espresso
-    - description: ""
-      enabled: true
-      name: New Coffee
-      priceCents: 300
-      sku: coffee-2
+  products: []
   shopName: "Gitops is a \U0001F916"
-  vouchers: [{appliesToProducts: [], code: voucher-1, discountType: percentage, discountValue: 100, displayMessage: Free Coffee for All, enabled: false, maximumUsage: 1}]
+  vouchers: []
