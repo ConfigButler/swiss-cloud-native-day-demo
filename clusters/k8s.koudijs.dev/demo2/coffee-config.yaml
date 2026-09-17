@@ -22,4 +22,4 @@ spec:
       priceCents: 300
       sku: coffee-2
   shopName: "Gitops is a \U0001F916"
-  vouchers: []
+  vouchers: [{appliesToProducts: [], code: voucher-1, discountType: percentage, discountValue: 100, displayMessage: Free Coffee for All, enabled: false, maximumUsage: 1}]
