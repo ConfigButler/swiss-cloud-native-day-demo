@@ -2,12 +2,12 @@ apiVersion: platform.configbutler.ai/v1alpha1
 kind: Database
 metadata:
   annotations:
-    platform.configbutler.ai/intent: 'New loyalty scheme launches in Q1 and the points ledger cannot live in the marketing spreadsheet any longer. Standard tier is fine: if it is down for an hour nobody loses money, they just cannot see their balance.'
+    platform.configbutler.ai/intent: 'Bumping to medium: the launch forecast doubled after the campaign was signed off, and small will not hold the accrual history past March.'
   name: loyalty-points-mysql
 spec:
   backup:
-    pointInTimeRecovery: false
-    retentionDays: 7
+    pointInTimeRecovery: true
+    retentionDays: 35
   dataClassification: internal
   deletionPolicy: snapshot-then-delete
   engine: mysql
@@ -21,5 +21,5 @@ spec:
   purpose: Points balances and the accrual history behind the loyalty programme. Rebuildable from the event stream, slowly.
   region: eu-central-1
   service: loyalty-points
-  size: small
-  tier: standard
+  size: medium
+  tier: business-critical
