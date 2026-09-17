@@ -35,7 +35,7 @@ spec:
       name: New Coffee
       priceCents: 300
       sku: coffee-5
-  shopName: Koudijs Demo Coffee3
+  shopName: Gitops is a lie
   vouchers:
     - code: TESTNET
       discountType: percentage
