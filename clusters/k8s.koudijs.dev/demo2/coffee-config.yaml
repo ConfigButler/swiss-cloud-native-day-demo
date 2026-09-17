@@ -9,6 +9,7 @@ spec:
     apiKeySecretRef: {}
   payments:
     apiKeySecretRef: {}
+    zeroAmountCheckoutAllowed: true
   products:
     - description: Small, strong, and fast
       enabled: true
