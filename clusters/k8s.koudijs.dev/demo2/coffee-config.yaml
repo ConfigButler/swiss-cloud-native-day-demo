@@ -3,13 +3,13 @@ kind: CoffeeConfig
 metadata:
   name: demo-coffee
 spec:
-  bannerText: "There is no spoonooooo"
-  currency: CHF
+  bannerText: " "
+  currency: ' '
   mail:
     apiKeySecretRef: {}
   payments:
     apiKeySecretRef: {}
     zeroAmountCheckoutAllowed: true
   products: []
-  shopName: "☕"
+  shopName: " "
   vouchers: []
