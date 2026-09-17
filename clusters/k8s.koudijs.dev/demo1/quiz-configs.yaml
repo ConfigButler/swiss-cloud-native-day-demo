@@ -36,7 +36,7 @@ spec:
       placeholder: Optional — your answer will be visible to the room
       title: 'In one line: what do you wish people could self-service?'
       type: freeText
-  state: live
+  state: closed
   title: How do you change Kubernetes configuration today?
 ---
 apiVersion: examples.configbutler.ai/v1alpha1
@@ -77,5 +77,5 @@ spec:
       placeholder: Optional — only used to get back to you
       title: Want me to follow up? Leave an email address.
       type: freeText
-  state: closed
+  state: live
   title: Now that you have seen it — would you run this?
