@@ -2,7 +2,7 @@ apiVersion: platform.configbutler.ai/v1alpha1
 kind: Database
 metadata:
   annotations:
-    platform.configbutler.ai/intent: Well I made a mistake in asking for it apperently
+    platform.configbutler.ai/intent: fghfgh
   name: bllaaaat
 spec:
   backup:
@@ -11,7 +11,7 @@ spec:
   dataClassification: public
   deletionPolicy: retain
   engine: mysql
-  engineVersion: "79"
+  engineVersion: "80"
   network:
     exposure: vpc
   owner:
