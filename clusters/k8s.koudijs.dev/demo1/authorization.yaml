@@ -112,6 +112,13 @@ rules:
       - get
       - patch
   - apiGroups:
+      - platform.configbutler.ai
+    resources:
+      - databases
+    verbs:
+      - list
+      - watch
+  - apiGroups:
       - roompass.configbutler.ai
     resourceNames:
       - demo
