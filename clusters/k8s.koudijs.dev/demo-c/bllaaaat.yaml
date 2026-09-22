@@ -2,7 +2,7 @@ apiVersion: platform.configbutler.ai/v1alpha1
 kind: Database
 metadata:
   annotations:
-    platform.configbutler.ai/intent: fghfgh
+    platform.configbutler.ai/intent: hello
   name: bllaaaat
 spec:
   backup:
@@ -11,7 +11,7 @@ spec:
   dataClassification: public
   deletionPolicy: retain
   engine: mysql
-  engineVersion: "80"
+  engineVersion: "81"
   network:
     exposure: vpc
   owner:
