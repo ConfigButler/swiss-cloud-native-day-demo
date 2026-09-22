@@ -2,13 +2,13 @@ apiVersion: platform.configbutler.ai/v1alpha1
 kind: Database
 metadata:
   annotations:
-    platform.configbutler.ai/intent: sdfgdsfg
+    platform.configbutler.ai/intent: sdfsdf
   name: test1
 spec:
   dataClassification: confidential
   deletionPolicy: snapshot-then-delete
   engine: mysql
-  engineVersion: "2"
+  engineVersion: "22"
   network:
     exposure: cluster-only
   owner:
