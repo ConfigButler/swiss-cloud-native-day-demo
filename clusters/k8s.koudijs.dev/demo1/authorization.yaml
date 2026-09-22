@@ -119,6 +119,13 @@ rules:
       - list
       - watch
   - apiGroups:
+      - configbutler.ai
+    resources:
+      - commitrequests
+    verbs:
+      - list
+      - watch
+  - apiGroups:
       - roompass.configbutler.ai
     resourceNames:
       - demo
