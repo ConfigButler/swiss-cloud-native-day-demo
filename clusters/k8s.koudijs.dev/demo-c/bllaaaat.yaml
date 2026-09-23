@@ -2,7 +2,7 @@ apiVersion: platform.configbutler.ai/v1alpha1
 kind: Database
 metadata:
   annotations:
-    platform.configbutler.ai/intent: 'Let''s make some changes2'
+    platform.configbutler.ai/intent: 'Is it now faster?'
   name: bllaaaat
 spec:
   backup:
@@ -11,7 +11,7 @@ spec:
   dataClassification: public
   deletionPolicy: retain
   engine: mariadb
-  engineVersion: "112"
+  engineVersion: "113"
   network:
     exposure: vpc
   owner:
