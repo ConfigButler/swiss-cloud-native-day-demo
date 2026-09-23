@@ -15,7 +15,7 @@ spec:
         {{range .Resources -}}
         - [{{.Operation}}] {{.Kind}} {{.Namespace}}/{{.Name}}
         {{end -}}
-      reconcileTemplate: 'chore(config): reconcile {{.Count}} {{if .Resource}}{{.Resource}}{{else}}resources{{end}}{{with .Revision}} at rv {{.}}{{end}}'
+      reconcileTemplate: 'chore(config): reconcile {{.Count}} {{if .Resource}}{{.Resource}}{{else}}resources{{end}}'
     window: 5s
   encryption:
     age:

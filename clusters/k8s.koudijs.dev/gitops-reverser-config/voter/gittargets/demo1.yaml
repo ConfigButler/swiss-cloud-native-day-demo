@@ -15,7 +15,7 @@ spec:
         {{range .Resources -}}
         - [{{.Operation}}] {{.Resource}}/{{.Name}}
         {{end -}}
-      reconcileTemplate: 'chore(demo1): reconcile {{.Count}} {{if .Resource}}{{.Resource}}{{else}}resources{{end}}{{with .Revision}} at rv {{.}}{{end}}'
+      reconcileTemplate: 'chore(demo1): reconcile {{.Count}} {{if .Resource}}{{.Resource}}{{else}}resources{{end}}'
     window: 5s
   gitProviderRef:
     name: k8s-audit-trail
