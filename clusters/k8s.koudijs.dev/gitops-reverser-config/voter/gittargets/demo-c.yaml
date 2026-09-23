@@ -13,9 +13,9 @@ spec:
         chore(demo-c): {{.Count}} database request{{if ne .Count 1}}s{{end}}
 
         {{range .Resources -}}
-        - [{{.Operation}}] {{.Kind}}/{{.Name}}
+        - [{{.Operation}}] {{.Kind}}/{{.Name}}{{with .ResourceVersion}}@{{.}}{{end}}
         {{end -}}
-      reconcileTemplate: 'chore(demo-c): reconcile {{.Count}} {{if .Resource}}{{.Resource}}{{else}}resources{{end}}'
+      reconcileTemplate: 'chore(demo-c): reconcile {{.Count}} {{if .Resource}}{{.Resource}}{{else}}resources{{end}}{{with .ResourceVersion}} at rv {{.}}{{end}}'
     window: 5s
   gitProviderRef:
     name: k8s-audit-trail

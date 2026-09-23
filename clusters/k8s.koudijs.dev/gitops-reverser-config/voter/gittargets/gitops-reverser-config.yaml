@@ -13,9 +13,9 @@ spec:
         chore(config): {{.Count}} ConfigButler change{{if ne .Count 1}}s{{end}}
 
         {{range .Resources -}}
-        - [{{.Operation}}] {{.Kind}} {{.Namespace}}/{{.Name}}
+        - [{{.Operation}}] {{.Kind}} {{.Namespace}}/{{.Name}}{{with .ResourceVersion}}@{{.}}{{end}}
         {{end -}}
-      reconcileTemplate: 'chore(config): reconcile {{.Count}} {{if .Resource}}{{.Resource}}{{else}}resources{{end}}'
+      reconcileTemplate: 'chore(config): reconcile {{.Count}} {{if .Resource}}{{.Resource}}{{else}}resources{{end}}{{with .ResourceVersion}} at rv {{.}}{{end}}'
     window: 5s
   encryption:
     age:

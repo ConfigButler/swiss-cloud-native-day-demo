@@ -13,9 +13,9 @@ spec:
         chore(demo2): {{.Count}} change{{if ne .Count 1}}s{{end}}{{with .LabelValue "voter.configbutler.ai/round"}} in {{.}}{{end}}
 
         {{range .Resources -}}
-        - [{{.Operation}}] {{if .Kind}}{{.Kind}}{{else}}{{.Resource}}{{end}}/{{.Name}}
+        - [{{.Operation}}] {{if .Kind}}{{.Kind}}{{else}}{{.Resource}}{{end}}/{{.Name}}{{with .ResourceVersion}}@{{.}}{{end}}
         {{end -}}
-      reconcileTemplate: 'chore(demo2): reconcile {{.Count}} {{if .Resource}}{{.Resource}}{{else}}resources{{end}}'
+      reconcileTemplate: 'chore(demo2): reconcile {{.Count}} {{if .Resource}}{{.Resource}}{{else}}resources{{end}}{{with .ResourceVersion}} at rv {{.}}{{end}}'
     window: 5s
   gitProviderRef:
     name: k8s-audit-trail
