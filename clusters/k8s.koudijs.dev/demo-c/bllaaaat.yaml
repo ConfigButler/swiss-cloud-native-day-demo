@@ -2,7 +2,7 @@ apiVersion: platform.configbutler.ai/v1alpha1
 kind: Database
 metadata:
   annotations:
-    platform.configbutler.ai/intent: 'chore: this is really cool, isnt it?'
+    platform.configbutler.ai/intent: 'Let''s make some changes'
   name: bllaaaat
 spec:
   backup:
@@ -10,8 +10,8 @@ spec:
     retentionDays: 4
   dataClassification: public
   deletionPolicy: retain
-  engine: mysql
-  engineVersion: "93"
+  engine: mariadb
+  engineVersion: "111"
   network:
     exposure: vpc
   owner:
