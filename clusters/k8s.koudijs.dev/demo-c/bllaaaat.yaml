@@ -2,7 +2,7 @@ apiVersion: platform.configbutler.ai/v1alpha1
 kind: Database
 metadata:
   annotations:
-    platform.configbutler.ai/intent: Lets give this one 83
+    platform.configbutler.ai/intent: 'chore: this is really cool, isnt it?'
   name: bllaaaat
 spec:
   backup:
@@ -11,7 +11,7 @@ spec:
   dataClassification: public
   deletionPolicy: retain
   engine: mysql
-  engineVersion: "82"
+  engineVersion: "93"
   network:
     exposure: vpc
   owner:
