@@ -27,3 +27,4 @@ spec:
   prune:
     mode: Always
   serializeNamespace: false
+  onRefusal: Ignore
